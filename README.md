@@ -1,70 +1,10 @@
-<p align="center">
-    <img src="https://github.com/octobercms/october/blob/develop/themes/demo/assets/images/october.png?raw=true" alt="October" width="25%" height="25%" />
-</p>
+Вы можете ознакомится с сайтом Oli. На странице вы увидите навигационную панель с иконкой сайта в левом углу и ссылками «main, courses, about us, contacts». Главная страница будет сопровождать вас приветствием, изображением и текстовой составляющей сайта. Спускаясь ниже вы можете ознакомиться с описанием курсов. Окошки внизу дают краткое описание курсов и ознакомит вас с ценами на них. В правом нижнем углу вы сможете ознакомиться с нашими социальными сетями. Такими как twitter, facebook, instagram. На второй странице вы сможете найти вам нужный курс судя во вашим запросам и предпочтениям. При нужде связаться с поддержкой сайта, вы можете кликнуть на клавишу “contact”, после нажатия которой вы увидите номера которые вам понадобились. При работе в темное время суток вы можете воспользоваться темной темой сайта в правом верхнем углу. Легким касанием руки работать станет гораздо комфортнее. Она обозначена иконкой в правом верхнем углу сайта.
 
-[October](https://octobercms.com) is a Content Management System (CMS) and web platform whose sole purpose is to make your development workflow simple again. It was born out of frustration with existing systems. We feel building websites has become a convoluted and confusing process that leaves developers unsatisfied. We want to turn you around to the simpler side and get back to basics.
+При создании данного проекта, разработчик использовал локальный сервер Open server. Для запуска проекта необходимо в настройках open server, в вкладке домены выбрать папку с данным проектом. Запускаем сервер. Далее в меню open server есть вкладка проекты, нажав на нее будут отображаться проекты. Выбираем нужный проект и запускаем его. Пользователь увидит главную страну сайта. При работе в темное время суток вы можете воспользоваться темной темой сайта в правом верхнем углу . Легким касанием руки работать станет гораздо комфортнее. 
+Прописав в адресной строке имя домена/backend (в моем случае это было dosn/backend), мы переходим в работу с October cms. Имя пользователя: admin, пароль: admin. Перейдя на вкладку настройки и выбрав пункт управление фронтом - можно поменять темы. Есть 3 шаблона: основной, страница с курсами с выбором различных видов деятельности. На этой странице вы сможете найти вам нужный курс судя во вашим запросам и предпочтениям. Присутствует поле для ввода, где вы можете вписать нужный запрос и если данный вид присутствует в списке, вы увидите только данный курс с картинкой и описанием данного курса.
 
-October's mission is to show the world that web development is not rocket science.
+Для доработки проекта разработчиками необходимо открыть среду разработки прописать npm init или если вы работаете в умной среде разработки, такой как webstorm IDE само подскажет, что следует установить. Для того что б править стили и добавлять динамику используется tailwind и Alpine.js соответсвенно. Для запуска компиляции в терминале можно прописать npm run build-css для tailwind и npm run build-js для Alpine.js
 
-[![Build Status](https://travis-ci.org/octobercms/october.svg?branch=develop)](https://travis-ci.org/octobercms/october)
-[![License](https://poser.pugx.org/october/october/license.svg)](./LICENSE.md)
+Прилагается 3 репозитория. 1 основной и еще 2 с темами для страницы. Скачав все, необходимо проверить в основном, в папке themes папки second, tjhelper. Если они пустые, то перемещаем с репозитория mainOil папку в themes вместо tjhelper(она называется так же в mainOil) и с searchOli second.
 
-> *Please note*: October is open source but it is not free software. A license with a small fee is required for each website you build with October CMS.
-
-## Installing October
-
-Instructions on how to install October can be found at the [installation guide](https://octobercms.com/docs/setup/installation).
-
-### Quick Start Installation
-
-If you have composer installed, run this in your terminal to install October CMS from command line. This will place the files in a directory named **myoctober**.
-
-    composer create-project october/october myoctober
-
-If you plan on using a database, run this command inside the application directory.
-
-    php artisan october:install
-
-## Learning October
-
-The best place to learn October CMS is by [reading the documentation](https://octobercms.com/docs) or [following some tutorials](https://octobercms.com/support/articles/tutorials).
-
-You may also watch this [introductory video](https://www.youtube.com/watch?v=yLZTOeOS7wI). Make sure to check out our [official YouTube channel](https://www.youtube.com/c/OctoberCMSOfficial). There is also the excellent video series by [Watch & Learn](https://watch-learn.com/series/making-websites-with-october-cms).
-
-## Coding Standards
-
-Please follow the following guides and code standards:
-
-* [PSR 4 Coding Standards](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md)
-* [PSR 2 Coding Style Guide](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
-* [PSR 1 Coding Standards](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md)
-
-## Security Vulnerabilities
-
-Please review [our security policy](https://github.com/octobercms/october/security/policy) on how to report security vulnerabilities.
-
-## Development Team
-
-October CMS was created by [Alexey Bobkov](https://www.linkedin.com/in/alexey-bobkov-232ba02b/) and [Samuel Georges](https://www.linkedin.com/in/samuel-georges-0a964131/), who both continue to develop the platform.
-
-## Foundation library
-
-The CMS uses [Laravel](https://laravel.com) as a foundation PHP framework.
-
-## Contact
-
-For announcements and updates:
-
-* [Contact Us Page](http://octoberdev.test/contact)
-* [Follow us on Twitter](https://twitter.com/octobercms)
-* [Like us on Facebook](https://facebook.com/octobercms)
-
-To chat or hang out:
-
-* [Join us on Slack](https://octobercms-slack.herokuapp.com/)
-* [Join us on Discord](https://discord.gg/gEKgwSZ)
-* [Join us on Telegram](https://t.me/octoberchat)
-
-## License
-
-The October CMS platform is licensed software, see [End User License Agreement](./LICENSE.md) (EULA) for more details.
+Как выглядит проект, можно посмотреть 2 фото, которые находятся в корневой папке основного репозитория. Называются: mainPage, searchPage.
